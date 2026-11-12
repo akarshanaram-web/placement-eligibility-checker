@@ -1,0 +1,18 @@
+DRAFT - the placement officer must check this before it is shared.
+
+Eligible students per job
+  J01 Zentrix Software: 5 eligible
+  J02 Nimbus Cloud: NEEDS REVIEW (not matched)
+  J03 Bluepeak Systems: 20 eligible
+  J04 Kovai Motors: NEEDS REVIEW (not matched)
+  J05 Greenfield Infra: 3 eligible
+  J06 Sparkline Analytics: NEEDS REVIEW (not matched)
+  J07 Voltedge Electronics: 2 eligible
+  J08 Medilink Health: 3 eligible
+  J09 Orbit Retail: 4 eligible
+  J10 Quantum Edge: 3 eligible
+
+Students eligible for no job yet
+  27EC012 Nandhini A (ECE, CGPA 6.4)
+  27ME017 Rakesh N (MECH, CGPA 5.9)
+  27CE019 Mohan Raj (CIVIL, CGPA 5.8)

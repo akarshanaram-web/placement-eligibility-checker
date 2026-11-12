@@ -1,0 +1,11 @@
+id,company,status,branches,min_cgpa,max_backlogs,batch,summary,eligible_count
+J01,Zentrix Software,matched,CSE|IT|AIDS,7.5,0,2027,"CSE, IT, AIDS 2027, CGPA 7.5, no backlogs",5
+J02,Nimbus Cloud,needs_review,,7.0,,2027,"No branch named, CGPA 7+, 2027 batch",n/a
+J03,Bluepeak Systems,matched,ALL,6.5,,,"All branches, CGPA 6.5+",20
+J04,Kovai Motors,needs_review,,,,,,n/a
+J05,Greenfield Infra,matched,CIVIL|MECH,6.0,1,2027,"CIVIL, MECH 2027, CGPA 6.0+, up to 1 arrear",3
+J06,Sparkline Analytics,needs_review,AIDS|CSE|IT,,,,"AIDS, CSE, IT, top 10% class",n/a
+J07,Voltedge Electronics,matched,ECE|EEE,7.0,0,2027,"ECE, EEE 2027 batch, CGPA 7.0+, no backlogs",2
+J08,Medilink Health,matched,CSE|IT,7.5,0,2027,"CSE, IT 2027, CGPA 7.5+, no active backlogs",3
+J09,Orbit Retail,matched,ALL,6.0,2,2026,"All branches, 2026 batch, min CGPA 6.0, up to 2 backlogs.",4
+J10,Quantum Edge,matched,CSE|AIDS,8.0,0,2027,"CSE, AIDS 2027, CGPA 8.0+, no backlogs",3
