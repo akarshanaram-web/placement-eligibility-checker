@@ -97,23 +97,18 @@ def call_llm(system_prompt, post):
 
 
 def parse_json(text):
-    """Turn the LLM's text into a dictionary. Returns None if it is not JSON."""
+    """Turn the LLM's text into a dictionary. Returns None if it is not JSON.
+    If the model repeats the object or adds extra words after it, only the
+    FIRST complete JSON object is used."""
     text = text.strip()
     text = re.sub(r"^```(?:json)?|```$", "", text, flags=re.MULTILINE).strip()
-    # If the model added words around the JSON, keep only the part from { to }
-    if "{" in text and "}" in text:
-        text = text[text.index("{"): text.rindex("}") + 1]
+    start = text.find("{")
+    if start == -1:
+        return None
     try:
-        data = json.loads(text)
+        data, _ = json.JSONDecoder().raw_decode(text[start:])
     except json.JSONDecodeError:
-        # Some models add extra words around the JSON. Try the part between { and }.
-        first, last = text.find("{"), text.rfind("}")
-        if first == -1 or last <= first:
-            return None
-        try:
-            data = json.loads(text[first:last + 1])
-        except json.JSONDecodeError:
-            return None
+        return None
     return data if isinstance(data, dict) else None
 
 
