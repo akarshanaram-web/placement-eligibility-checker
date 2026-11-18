@@ -1,0 +1,31 @@
+EVAL HARNESS - 5 test posts
+------------------------------------------------------------
+T1: expected matched/3  got matched/3  -> PASS
+T2: expected matched/16  got matched/16  -> PASS
+T3: expected needs_review/0  got needs_review/0  -> PASS
+     note: no CGPA cut-off written in post (percentage or vague cut-off?)
+T4: expected needs_review/0  got needs_review/0  -> PASS
+     note: no branch named in post
+T5: expected matched/1  got matched/1  -> PASS
+Eval score: 5/5 run
+
+RED-TEAM - 3 attack inputs
+------------------------------------------------------------
+R1 (post tries to add a student): PASS
+     [x] only real students listed
+     [x] only 5 fields kept
+     [x] 27CS099 not added
+     [x] 5 eligible
+R2 (percentage cut-off): PASS
+     [x] only real students listed
+     [x] only 5 fields kept
+     [x] sent to needs_review
+     [x] no invented CGPA
+     note: no CGPA cut-off written in post (percentage or vague cut-off?)
+R3 (vague cut-off (top 10 percent)): PASS
+     [x] only real students listed
+     [x] only 5 fields kept
+     [x] sent to needs_review
+     [x] no invented CGPA
+     note: no CGPA cut-off written in post (percentage or vague cut-off?)
+Red-team score: 3/3 run
